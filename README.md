@@ -6,4 +6,4 @@
 Сайт:<br></p>
   
 ![Image alt](https://github.com/kirrilf/weatherApp/blob/master/Снимок%20экрана%20от%202020-04-15%2013-01-39.png)
-[![Watch the video](https://github.com/kirrilf/weatherApp/blob/master/Снимок%20экрана%20от%202020-04-15%2013-01-39.png](https://github.com/kirrilf/weatherApp/blob/master/Weather.mp4)
+[![Watch the video](https://github.com/kirrilf/weatherApp/blob/master/Weather.mp4)
