@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import requests
 from .forms import CityForm
+from .utils import clothes, speedInfo, humidityInfo
 
 def index(request):
   
@@ -35,13 +36,19 @@ def index(request):
                 'icon':res["weather"][0]["icon"],
                 'pressure':res["main"]["pressure"],
                 'humidity':res["main"]["humidity"],
-                'windSpeed':res["wind"]["speed"]
+                'windSpeed':res["wind"]["speed"],
+                'clothes':clothes(res["main"]["temp"]),
+                'speedInfo':speedInfo(res["wind"]["speed"]),
+                'humidityInfo':humidityInfo(res["main"]["humidity"])
         }
         context['info'] = info
+
+   
+
     else:
         context["errorInput"] = True
 
 
 
-    print(context["errorInput"])
+    
     return render(request, 'weather/show.html', context)
