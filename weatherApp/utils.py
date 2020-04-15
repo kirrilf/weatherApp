@@ -35,7 +35,7 @@ def speedInfo(speed):
 
 def humidityInfo(humidity):
     if humidity <= 50:
-        humidityInf = "and sec."
+        humidityInf = "and dry."
     elif humidity > 50 and humidity <=70:
         humidityInf = "and humidity normal."
     elif humidity > 70 and humidity <=80:
